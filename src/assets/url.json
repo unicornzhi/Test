@@ -1,0 +1,14 @@
+[
+    {
+        "rootUrl":"http://localhost:3000/"
+    },
+    {
+    "usersList":"usersList",
+    "deleteUser":"deleteUser",
+    "search":"search",
+    "editMsg":"editMsg",
+    "login":"login",
+    "sign":"sign",
+    "adminLogin":"adminLogin"
+}
+]

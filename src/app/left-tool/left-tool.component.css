@@ -1,0 +1,64 @@
+#left_tool{
+    width: 175px;
+    height: 100%;
+    float: left;
+    background-color: #f3c2c6;
+}
+body .ui-menu {
+    background-color: #f3c2c6;
+}
+button{
+    margin-top: 30px;
+    width: 65px;
+    height: 30px;
+    font-size: 16px;
+    margin-left: 10px;
+    background-color: #3ea0f1;
+    border: none;
+    color: aliceblue;
+}
+.cancel{
+    margin-left: 85px;
+}
+#userInfo{
+    width: 500px;
+    height: 515px;
+    float: left;
+    margin-left: 169px;
+    padding: 0px 45px 0px 122px;
+}
+.ui-float-label{
+    margin-top: 27px;
+}
+h4{
+    height: 0px;
+}
+.ui-g-12{
+    width: 50%;
+}
+#showInfo{
+    width: 515px;
+    float: left;
+    height: 515px;
+    font-size: 18px;
+    padding: 18px 24px;
+    border-left-color: #1b1a1b;
+    border-left-style: dashed;
+    border-left-width: 2px;
+}
+#showInfo div{
+    margin-top: 30px;
+}
+#showInfo span{
+    margin-left: 40px;
+}
+#showInfo h4 {
+    margin-top: -23px;
+    margin-bottom: 53px;
+}
+body .ui-message.ui-message-error {
+    background-color: #ecd9db;
+    border: 0 none;
+    color: #da2b2b;
+    font-size: 24px;
+}

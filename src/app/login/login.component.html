@@ -1,0 +1,55 @@
+<div id="login_img" [ngStyle]="{'display':LoginPage}">
+    <img src="../../assets/login.png" alt="">
+    <span id="error" [ngStyle]="{'display':errorMsg}" ngDefaultControl [(ngModel)]="errorInfo">{{errorInfo}}</span>
+    <div id="login">
+        <!-- <p-sidebar [(visible)]="loginVisible" [fullScreen]="true" [baseZIndex]="10000">
+        <span id="error" [ngStyle]="{'display':errorMsg}">用户名或密码错误</span>
+        <div id="login_input">
+            <h3>用户名:</h3>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="username" />
+                <label for="float-input">username</label>
+            </span>
+            <h3>密码:</h3>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="30" pInputText [(ngModel)]="password" />
+                <label for="float-input">password</label>
+            </span>
+        </div>
+        <div id="login_button">
+            <button pButton type="button" (click)="adminLogin()" lable="Save" class="ui-button-success">
+              登录
+            </button>
+            <button pButton type="button" (click)="clearInput()" lable="Cancel"
+                class="ui-button-secondary cancel">
+                取消
+            </button>
+        </div>
+    </p-sidebar> -->
+        <div id="login_input">
+            <h3>用户名:</h3>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="26" pInputText [(ngModel)]="username" />
+                <label for="float-input">username</label>
+            </span>
+            <h3>密码:</h3>
+            <span class="ui-float-label">
+                <input id="float-input" type="text" size="26" pInputText [(ngModel)]="password" />
+                <label for="float-input">password</label>
+            </span>
+        </div>
+        <div id="login_button">
+            <button pButton type="button" (click)="adminLogin()" lable="Save" class="ui-button-success" >
+                登录
+            </button>
+            <button style="margin-left: 30px" pButton type="button" (click)="clearInput()" lable="Cancel" class="ui-button-secondary cancel">
+                取消
+            </button>
+        </div>
+    </div>
+</div>
+<div [ngStyle]="{'display':userPage}">
+        <app-title></app-title>
+        <app-left-tool></app-left-tool>
+        <app-user-list></app-user-list>
+</div>

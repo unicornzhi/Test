@@ -1,0 +1,120 @@
+<div id="left_tool">
+   <!-- <p-sidebar [(visible)]="deleteSiderbar" [baseZIndex]="10000">
+      <h3> 请输入要删除的用户ID</h3>
+      <span class="ui-float-label">
+         <input id="float-input" type="text" size="30" pInputText [(ngModel)]="userId" />
+         <label for="float-input">UserID</label>
+      </span>
+      <button pButton type="button" (click)="deleteUser()" lable="Save" class="ui-button-success">
+         确定
+      </button>
+      <button pButton type="button" (click)="deleteSiderbar = false" lable="Cancel" class="ui-button-secondary cancel">
+         取消
+      </button>
+      <h3 [ngStyle]="{'display':success}" style="color: forestgreen">删除成功</h3>
+      <h3 [ngStyle]="{'display':defeat}" style="color: brown">删除失败</h3>
+   </p-sidebar> -->
+
+
+   <!-- <p-sidebar [(visible)]="addSiderbar" [fullScreen]="true" [baseZIndex]="10000">
+      <h1 style="text-align: center" [ngStyle]="{'display':showAddUser}">添 加 新 用 户</h1>
+      <h1 style="text-align: center" [ngStyle]="{'display':showUpdateUser}">编 辑 用 户</h1>
+      <div id="userInfo" >
+         <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="userId" />
+            <label for="float-input">用户ID</label>
+         </span>
+         <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="username" />
+            <label for="float-input">用户名</label>
+         </span>
+         <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="pwd" />
+            <label for="float-input">密码</label>
+         </span>
+          <span>
+            <h4>密码:</h4>
+            <input pPassword type="password" [(ngModel)]="pwd">
+         </span> 
+         <span class="ui-float-label">
+            <input id="float-input" type="text" size="30" pInputText [(ngModel)]="age" />
+            <label for="float-input">年龄</label>
+         </span>
+
+         <span>
+            <h4>性别:</h4> -->
+            <!-- <div class="ui-g" style="width:250px;margin-bottom:10px">
+               <div class="ui-g-12">
+                  <p-radioButton name="group1" value="男" label="男" [(ngModel)]="selectedSex" inputId="opt1">
+                  </p-radioButton>
+               </div>
+               <div class="ui-g-12">
+                  <p-radioButton name="group1" value="女" label="女" [(ngModel)]="selectedSex" inputId="opt2">
+                  </p-radioButton>
+               </div>
+            </div> 
+         </span>
+         <span>
+            <h4 class="first">爱好:</h4>
+            <div class="ui-g" style="width:250px;margin-bottom:10px">
+               <div class="ui-g-12">
+                  <p-checkbox name="group1" value="打篮球" label="打篮球" [(ngModel)]="selectedSports"  >
+                  </p-checkbox>
+               </div>
+               <div class="ui-g-12">
+                </div>
+               <div class="ui-g-12">
+                 
+               </div> 
+            </div>
+         </span>
+         <button pButton type="button" (click)="submitInfo()" lable="Save" class="ui-button-success">
+            确定
+         </button>
+         <button pButton type="button" (click)="clearInput()" lable="Cancel" class="ui-button-secondary cancel">
+            取消
+         </button>
+      </div>
+      <div id="showInfo" [(ngModel)]="newUserMsg">
+         <p-message severity="error" text="添加新用户失败" [ngStyle]="{'display':addfieldMsg}" style="margin-top: 180px">
+         </p-message>
+         <p-message severity="error" text="编辑用户失败" [ngStyle]="{'display':updatefieldMsg}" style="margin-top: 180px">
+            </p-message>
+         <div *ngFor="let newUser of newUserMsg" [ngStyle]="{'display':showInfoDiv}">
+            <h4 [ngStyle]="{'display':showAddUser}">新添加用户信息如下:</h4>
+            <h4 [ngStyle]="{'display':showUpdateUser}">编辑后的用户信息如下:</h4>
+            <div id="user_Id">
+               <i>用户ID:</i>
+               <span>{{newUser.id}}</span>
+            </div>
+            <div id="user_name">
+               <i>用户名:</i>
+               <span>{{newUser.name}}</span>
+            </div>
+            <div id="password">
+               <i>用户密码:</i>
+               <span>{{newUser.password}}</span>
+            </div>
+            <div id="Age">
+               <i>用户年龄:</i>
+               <span>{{newUser.age}}</span>
+            </div>
+            <div id="sex">
+               <i>用户性别:</i>
+               <span>{{newUser.sex}}</span>
+            </div>
+            <div id="interest">
+               <i>用户爱好:</i>
+               <span *ngFor="let interest of newUser.interest">{{interest}}</span>
+            </div>
+            <button pButton type="button" (click)="clearInput()" lable="Cancel"
+               class="ui-button-secondary cancel">
+               关闭
+            </button>
+         </div>
+      </div>
+   </p-sidebar>
+   
+   <!-- 菜单栏 -->
+   <!-- <p-menu [model]="items" (click)="showSelected($event)"></p-menu> -->
+</div>

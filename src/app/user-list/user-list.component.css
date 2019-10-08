@@ -1,0 +1,85 @@
+#userList{
+    width: 84%;
+    padding: 20px 20px;
+    margin: 16px 19px;
+    height: 470px;
+    float: left;
+}
+body .ui-orderlist .ui-orderlist-controls{
+    display: none;
+}
+.ui-orderlist-list-container{
+    width:200px;
+}
+#userDetail{
+    float: left;
+    width: 850px;
+    margin-left: 27px;
+}
+.ui-orderlist{
+    width: 200px;
+    float: left;
+}
+body .ui-table .ui-table-tbody > tr > td{
+    text-align: center;
+}
+.icon{
+    float: left;
+    margin-left: 13px;
+    margin-top: 7px;
+}
+.ui-button-icon-only .ui-button-text, .ui-button-text-empty .ui-button-text {
+    height: 30px;
+}
+h3{
+    text-align: center;
+}
+#search{
+    margin-top: 0;
+    width: 90px;
+    height: 40px;
+}
+#keyword{
+    width: 400px;
+    height: 40px;
+}
+.ui-inputgroup {
+    margin-left: 185px;
+}
+.ui-table {
+    left: 189px;
+}
+#add{
+    margin-top: 0px;
+    width: 100px;
+    height: 38px;
+    margin-left: 235px;
+    margin-bottom: 13px;
+}
+#user_name{
+    width: 400px;
+    height: 154px;
+    z-index: 1;
+    background:  #fdfdf0;
+    position: absolute;
+    overflow: auto;
+    border: #cac5c5 solid 1px;
+    border-top: none;
+    top: 92px;
+    left: 356px;
+    color: #c1c1c1;
+}
+#user_name ul li{
+    list-style: none;
+    margin-left: -32px;
+    cursor: pointer;
+    width: 107%;
+    height: 28px;
+    margin-top: 7px;
+}
+#user_name ul li:hover{
+    background-color:  #e0dfdf;
+}
+#user_name ul {
+    list-style: none;
+}
